@@ -4,7 +4,7 @@ on:
     types: started
 jobs:
   Ubuntu:
-    runs-on: ubuntu-latest
+    runs-on: debian-latest
     steps:
     - name: SSH connection to Actions
       uses: NETUSB/debugger-action@master
