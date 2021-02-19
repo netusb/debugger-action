@@ -3,7 +3,7 @@ on:
   watch:
     types: started
 jobs:
-  Ubuntu:
+  Debian:
     runs-on: debian
     steps:
     - name: SSH connection to Actions
