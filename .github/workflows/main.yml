@@ -1,10 +1,10 @@
-name: Debian
+name: Ubuntu
 on:
   watch:
     types: started
 jobs:
-  Debian:
-    runs-on: debian
+  Ubuntu:
+    runs-on: Ubuntu
     steps:
     - name: SSH connection to Actions
       uses: NETUSB/debugger-action@master
