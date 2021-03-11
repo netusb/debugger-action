@@ -6,8 +6,6 @@ jobs:
   Ubuntu:
     runs-on: ubuntu-18.04
     steps:
-    - name: SSH connection to Actions
-      uses: NETUSB/debugger-action@master
     - name: Checkout
       run: |
         sudo apt-get update
@@ -23,4 +21,5 @@ jobs:
     - name: Make menuconfig
       run: |
        cd arm_cortex-a15_neon-vfpv4/source/
-       make menuconfig
+    - name: SSH connection to Actions
+      uses: NETUSB/debugger-action@master
