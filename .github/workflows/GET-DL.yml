@@ -14,9 +14,9 @@ jobs:
       run: |
         cd /home/runner/
         git clone https://github.com/netusb/openmptcprouter
-        cd openmptcprouter
+        cd /home/runner/openmptcprouter
         git checkout master
-        OMR_TARGET="arm_cortex-a15_neon-vfpv4" OMR_FEED_SRC="master" ./build.sh
+        /home/runner/openmptcprouter/OMR_TARGET="arm_cortex-a15_neon-vfpv4" OMR_FEED_SRC="master" ./build.sh
     - name: Generate config file
       run: |
         rm -rf /home/runner/openmptcprouter/arm_cortex-a15_neon-vfpv4/source/.config
