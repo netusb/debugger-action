@@ -23,12 +23,4 @@ jobs:
     - name: Make menuconfig
       run: |
        cd arm_cortex-a15_neon-vfpv4/source/
-       make menuconfig 
-        
-      
-      
-      
-      
-      
-      
-      
+       make menuconfig
