@@ -1,4 +1,4 @@
-name: Ubuntu
+name: windows-latest
 on:
   watch:
     types: started
