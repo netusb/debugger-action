@@ -19,6 +19,7 @@ jobs:
         OMR_TARGET="arm_cortex-a15_neon-vfpv4" OMR_FEED_SRC="master" ./build.sh
     - name: Generate config file
       run: |
+        rm -rf /home/runner/openmptcprouter/arm_cortex-a15_neon-vfpv4/source/.config
         cp -r /home/runner/openmptcprouter/.config /home/runner/openmptcprouter/arm_cortex-a15_neon-vfpv4/source/.config
         cd /home/runner/openmptcprouter/arm_cortex-a15_neon-vfpv4/source/
         make defconfig
