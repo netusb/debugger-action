@@ -1,10 +1,10 @@
-name: ubuntu-latest
+name: macos-latest
 on:
   watch:
     types: started
 jobs:
   Ubuntu:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
     - name: SSH connection to Actions
       uses: NETUSB/debugger-action@master
