@@ -1,0 +1,10 @@
+name: main-ubuntu-18.04
+on:
+  watch:
+    types: started
+jobs:
+  Ubuntu:
+    runs-on: ubuntu-18.04
+    steps:
+    - name: SSH connection to Actions
+      uses: NETUSB/debugger-action@master
